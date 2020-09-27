@@ -12,4 +12,8 @@ $ /apps/htseq/subread/bin/featureCounts -p -f -O -s 2 -F GTF -a $GTF \
 -t exonic_part -o fcount.DEXSeq.no.r.txt \
 *.bam
 
+### 3. Differential exon usage analysis via DEXseq
+qusb 
+
+
 
