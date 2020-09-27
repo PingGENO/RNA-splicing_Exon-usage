@@ -1,9 +1,9 @@
 # RNA_splicing
 
-## Download the GTF file
-**Link** : ftp://ftp.ensembl.org/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz
-
+## DEXseq
 ### 1. Generate the exon count file
+#### Download the GTF file
+**Link** : ftp://ftp.ensembl.org/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz
 $ python python_scripts/dexseq_prepare_annotation2.py -r no -f Homo_sapiens.GRCh37.87_DEXSeq.gtf  Homo_sapiens.GRCh37.87.gtf.gz Homo_sapiens.GRCh37.87_DEXSeq.gff
 
 ### 2. Generate the featureCounts file
