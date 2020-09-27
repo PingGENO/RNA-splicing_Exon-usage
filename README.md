@@ -17,7 +17,9 @@ GTF=/well/jknight/ping/gtfs/Homo_sapiens.GRCh38.84_DEXSeq.counts.gtf.
 ```
 
 ### 3. Differential exon usage analysis via DEXseq
-** qusb run.sh
+```
+qusb run.sh
+```
 
 
 
