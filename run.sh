@@ -5,6 +5,9 @@
 #$ -o /users/jknight/kwz374/R/AS.patinets.splicing
 #$ -e /users/jknight/kwz374/R/AS.patinets.splicing
 
+# Make the script stop on any error.
+set -uxeo pipefail
+
 echo "job started on" `date +"%T %Y-%m-%d"`
 module load R/3.6.2-foss-2019b
 
