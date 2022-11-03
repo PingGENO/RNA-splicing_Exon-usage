@@ -11,7 +11,7 @@ python python_scripts/dexseq_prepare_annotation2.py -r no -f Homo_sapiens.GRCh37
 
 ### 2. Generate exonic_part count file
 ```
-GTF=/well/jknight/ping/gtfs/Homo_sapiens.GRCh38.84_DEXSeq.counts.gtf.
+GTF=Homo_sapiens.GRCh38.84_DEXSeq.counts.gtf.
 /apps/htseq/subread/bin/featureCounts -p -f -O -s 2 -F GTF -a $GTF \
 -t exonic_part -o fcount.DEXSeq.no.r.txt \
 *.bam.
