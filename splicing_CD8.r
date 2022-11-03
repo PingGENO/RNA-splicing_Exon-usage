@@ -27,7 +27,7 @@ message("Reading and adding Exon IDs for DEXSeq")
  dcounts = dcounts[,c(1,7:57)]
  
  # clean the columns
- colClean <- function(x){ colnames(x) <- gsub("/well/jknight/ping/Ankylosing.spondylitis.RNAseq/CD8.bam.files/", "", colnames(x)); x } 
+ colClean <- function(x){ colnames(x) <- gsub("{PATH}/CD8.bam.files/", "", colnames(x)); x } 
  dcounts = colClean(dcounts)
  colClean <- function(x){ colnames(x) <- gsub(".nodup.bam", "", colnames(x)); x } 
  dcounts = colClean(dcounts)
@@ -69,7 +69,7 @@ genesrle <- sapply(splitted, "[[", 1)
 
 
 ## parse the flattened file
-aggregates <- read.delim("/well/jknight/ping/gtfs/Homo_sapiens.GRCh37.87_DEXSeq.gtf", stringsAsFactors = FALSE, 
+aggregates <- read.delim("{PATH}/Homo_sapiens.GRCh37.87_DEXSeq.gtf", stringsAsFactors = FALSE, 
                           header = FALSE)
 colnames(aggregates) <- c("chr", "source", "class", "start", 
                           "end", "ex", "strand", "ex2", "attr")
